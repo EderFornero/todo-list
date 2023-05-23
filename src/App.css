@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.div-todo-header{ 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 500;
+  margin: 20px;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.div-todo-header .todo-svg{
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.div-input{ 
+  display: flex;
+  justify-content: center;
+}
+
+.div-input input{ 
+  height: 30px;
+  font-size: 15px;
+  border: solid 1px rgb(161, 160, 160);
+  border-radius: 6px;
+  outline: none;
+  padding: 5px;
+}
+
+.div-input button{ 
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.div-input button:hover{
+  background-color: rgb(132, 236, 132);
+  border-radius: 6px;
+  transition: ease .3s;
+}
+
+.div-ul{ 
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+}
+
+li{ 
+  margin: 12px 0;
+}
+
+.delete-button{ 
+  font-size: 10px;
+  margin-left: 8px;
+  border: none;
+  color: #FFF;
+  border-radius: 4px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
